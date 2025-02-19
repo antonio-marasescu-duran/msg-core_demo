@@ -1,0 +1,69 @@
+<div class="button-examples-container">
+  <ngx-msg-button
+    [label]="'Primary Button'"
+    [type]="ButtonType.PRIMARY"
+    [variant]="ButtonVariant.DEFAULT"
+    [disabled]="false"
+    [width]="ButtonWidthType.FIT_CONTENT"
+    (clickEvent)="onHandleButtonClick('Button Primary')"
+  ></ngx-msg-button>
+  <ngx-msg-button
+    [label]="'CTA Button'"
+    [type]="ButtonType.CTA"
+    [variant]="ButtonVariant.DEFAULT"
+    [disabled]="false"
+    [width]="ButtonWidthType.FIT_CONTENT"
+    (clickEvent)="onHandleButtonClick('Button CTA')"
+  ></ngx-msg-button>
+  <ngx-msg-button
+    [label]="'Text Button'"
+    [type]="ButtonType.TEXT"
+    [variant]="ButtonVariant.DEFAULT"
+    [disabled]="false"
+    [width]="ButtonWidthType.FIT_CONTENT"
+    (clickEvent)="onHandleButtonClick('Button Text')"
+  ></ngx-msg-button>
+  <ngx-msg-button
+    [label]="'Primary Button'"
+    [type]="ButtonType.PRIMARY"
+    [variant]="ButtonVariant.OUTLINED"
+    [disabled]="false"
+    [width]="ButtonWidthType.FIT_CONTENT"
+    (clickEvent)="onHandleButtonClick('Button Primary Outlined')"
+  ></ngx-msg-button>
+
+  <!-- Disabled Versions -->
+
+  <ngx-msg-button
+    [label]="'Primary Button'"
+    [type]="ButtonType.PRIMARY"
+    [variant]="ButtonVariant.DEFAULT"
+    [disabled]="true"
+    [width]="ButtonWidthType.FIT_CONTENT"
+    (clickEvent)="onHandleButtonClick('Button Primary')"
+  ></ngx-msg-button>
+  <ngx-msg-button
+    [label]="'CTA Button'"
+    [type]="ButtonType.CTA"
+    [variant]="ButtonVariant.DEFAULT"
+    [disabled]="true"
+    [width]="ButtonWidthType.FIT_CONTENT"
+    (clickEvent)="onHandleButtonClick('Button CTA')"
+  ></ngx-msg-button>
+  <ngx-msg-button
+    [label]="'Text Button'"
+    [type]="ButtonType.TEXT"
+    [variant]="ButtonVariant.DEFAULT"
+    [disabled]="true"
+    [width]="ButtonWidthType.FIT_CONTENT"
+    (clickEvent)="onHandleButtonClick('Button Text')"
+  ></ngx-msg-button>
+  <ngx-msg-button
+    [label]="'Primary Button'"
+    [type]="ButtonType.PRIMARY"
+    [variant]="ButtonVariant.OUTLINED"
+    [disabled]="true"
+    [width]="ButtonWidthType.FIT_CONTENT"
+    (clickEvent)="onHandleButtonClick('Button Primary Outlined')"
+  ></ngx-msg-button>
+</div>

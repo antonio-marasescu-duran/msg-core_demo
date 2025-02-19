@@ -1,0 +1,36 @@
+<form
+  class="input-field-examples-container"
+  [formGroup]="exampleFormGroup"
+  novalidate
+>
+  <ngx-msg-input-field
+    [label]="'Text Field 1'"
+    [validationErrors]="validationErrors"
+    [control]="exampleFormGroup.controls.field1"
+    [placeholder]="'Insert text here'"
+    [required]="true"
+    [disabled]="false"
+    [theme]="ThemeType.PRIMARY"
+    [type]="InputType.TEXT"
+  ></ngx-msg-input-field>
+  <ngx-msg-input-field
+    [label]="'Text Area Field 2'"
+    [validationErrors]="validationErrors"
+    [control]="exampleFormGroup.controls.field2"
+    [placeholder]="'Insert text here'"
+    [required]="true"
+    [disabled]="false"
+    [theme]="ThemeType.SECONDARY"
+    [type]="InputType.TEXT_AREA"
+  ></ngx-msg-input-field>
+  <ngx-msg-input-field
+    [label]="'Password Field 3'"
+    [validationErrors]="validationErrors"
+    [control]="exampleFormGroup.controls.field3"
+    [placeholder]="'Insert password here'"
+    [required]="true"
+    [disabled]="false"
+    [theme]="ThemeType.PRIMARY"
+    [type]="InputType.PASSWORD"
+  ></ngx-msg-input-field>
+</form>

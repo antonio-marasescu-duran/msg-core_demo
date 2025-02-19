@@ -1,0 +1,27 @@
+<ngx-msg-main-navigation-menu
+  [tabs]="[
+    { id: '0', text: 'Example Tab 1' },
+    { id: '1', text: 'Example Tab 2' },
+    { id: '2', text: 'Example Tab 3' }
+  ]"
+  [activeTabId]="'0'"
+></ngx-msg-main-navigation-menu>
+<div class="examples-container">
+  <span class="msg-h1-typography msg-text-secondary">Msg Core Examples</span>
+  <div>
+    <span class="msg-h4-typography msg-text-primary">Button Examples</span>
+    <app-button-examples />
+  </div>
+  <div>
+    <span class="msg-h4-typography msg-text-primary">Input Field Examples</span>
+    <app-input-field-examples />
+  </div>
+  <div>
+    <span class="msg-h4-typography msg-text-primary">Dialog Examples</span>
+    <app-dialog-examples />
+  </div>
+  <div>
+    <span class="msg-h4-typography msg-text-primary">Card Examples</span>
+    <app-card-examples />
+  </div>
+</div>

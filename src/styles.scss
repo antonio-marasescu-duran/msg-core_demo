@@ -1,0 +1,48 @@
+@use 'msg-core/styles' as msg-core;
+
+@include msg-core.scrollbar();
+
+:root {
+  --msg-main-color: #56a3bc;
+  --msg-main-color-hover: #3f879e;
+  --msg-main-color-hover-light: #56a3bc19;
+  --msg-secondary-color: #a01441;
+  --msg-secondary-color-hover: #8c0e36;
+  --msg-secondary-color-hover-light: #faebf0;
+
+  --msg-light-text-color: #ffffff;
+  --msg-dark-text-color: #575757;
+  --msg-dark-grey-text-color: #6f6f6f;
+  --msg-darkest-grey-text-color: #373737de;
+  --msg-grey-text-color: #707070;
+  --msg-medium-grey-text-color: #9b9b9b;
+  --msg-light-grey-text-color: #c6c6c6;
+
+  --msg-white-background: #ffffff;
+  --msg-light-background: #f1f6f9;
+  --msg-grey-background: #f6f6f6;
+  --msg-dark-background: #d9e5ec;
+  --msg-black-background: #000000de;
+
+  --msg-light-shadow: #00000012;
+  --msg-light-grey-shadow: #0000001a;
+  --msg-light-shadow-hover: #0000000b;
+  --msg-dark-shadow: #00000029;
+
+  --msg-error-red: #e90d0d;
+
+  --msg-grey-border: #d9d9d9;
+  --msg-light-grey-scrollbar: #dbdbdb;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  background-color: msg-core.$white-background;
+}

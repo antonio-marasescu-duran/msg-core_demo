@@ -1,0 +1,31 @@
+<div>
+  <ngx-msg-button
+    [label]="'Open Dialog Button'"
+    [disabled]="false"
+    (clickEvent)="openDialog()"
+    (click)="handleClick($event)"
+  >
+  </ngx-msg-button>
+</div>
+
+<ngx-msg-dialog
+  *ngIf="isDialogOpen"
+  [overlayOpacity]="0.2"
+  [closeDialogOnOverlayClick]="true"
+  [title]="'Dialog title'"
+  (dialogClosedEvent)="closeDialog()"
+>
+  <div content>
+    <div [style.line-height]="'20px'">
+      Dialog Body. Click outside or on the button to close me
+    </div>
+  </div>
+  <ngx-msg-button
+    [label]="'Close Button'"
+    [type]="ButtonType.TEXT"
+    [variant]="ButtonVariant.DEFAULT"
+    [disabled]="false"
+    [width]="ButtonWidthType.FIT_CONTENT"
+    (clickEvent)="onDialogClose()"
+  ></ngx-msg-button>
+</ngx-msg-dialog>
